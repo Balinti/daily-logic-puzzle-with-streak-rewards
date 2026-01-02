@@ -11,7 +11,7 @@ import { hasUniqueSolution } from './solver';
 import { gridToCanonical } from './canonical';
 
 // Default enabled rules
-const DEFAULT_ENABLED_RULES: Set<RuleCardType> = new Set([
+const DEFAULT_ENABLED_RULES: Set<RuleCardType> = new Set<RuleCardType>([
   'LEFT_OF',
   'NOT_IN_ROW',
   'NOT_IN_COL',
