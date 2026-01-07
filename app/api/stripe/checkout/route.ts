@@ -62,6 +62,7 @@ export async function POST(request: NextRequest) {
       success_url: successUrl || `${process.env.NEXT_PUBLIC_SITE_URL}/account?success=1`,
       cancel_url: cancelUrl || `${process.env.NEXT_PUBLIC_SITE_URL}/paywall?canceled=1`,
       metadata: {
+        app_name: 'daily-logic-puzzle',
         supabase_user_id: user.id,
       },
     });
